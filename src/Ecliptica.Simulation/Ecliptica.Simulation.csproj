@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Ecliptica.Core\Ecliptica.Core.csproj" />
+    <ProjectReference Include="..\Ecliptica.Physics\Ecliptica.Physics.csproj" />
+    <ProjectReference Include="..\Ecliptica.Renderer\Ecliptica.Renderer.csproj" />
+  </ItemGroup>
+</Project>

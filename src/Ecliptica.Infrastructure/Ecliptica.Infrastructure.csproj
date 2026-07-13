@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Ecliptica.Core\Ecliptica.Core.csproj" />
+  </ItemGroup>
+</Project>

@@ -40,3 +40,21 @@ The dependency graph must always point toward **Core**. No circular dependencies
 - Thread-safe, data-oriented design where beneficial
 - GPU-first rendering pipeline with mode-agnostic abstractions
 
+## Building and Running
+
+### Run the Desktop WPF Application
+To build and launch the visual desktop application:
+```powershell
+dotnet run --project src/Ecliptica.App/Ecliptica.App.csproj -c Debug
+```
+
+### Run Backend Unit Tests Only
+To verify the physics systems, astrophysical events, and state mutations:
+```powershell
+dotnet test
+```
+
+## Project Status
+All core development Phases 1 through 10 are fully completed and verified. 
+The physics solver includes analytical N-body gravity, Barnes-Hut octree approximations, ILGPU GPU kernels, Roche accretion disks, and cosmic structure clustering.
+The UI implements reference-matched floating overlay workspaces utilizing transparent WPF popups on top of the low-level OpenGL rendering canvas.

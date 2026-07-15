@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ecliptica.Core\Ecliptica.Core.csproj" />
+    <ProjectReference Include="..\Ecliptica.Infrastructure\Ecliptica.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

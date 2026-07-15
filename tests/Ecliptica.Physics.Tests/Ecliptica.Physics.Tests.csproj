@@ -13,5 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Ecliptica.Physics\Ecliptica.Physics.csproj" />
+    <ProjectReference Include="..\..\src\Ecliptica.Simulation\Ecliptica.Simulation.csproj" />
   </ItemGroup>
 </Project>

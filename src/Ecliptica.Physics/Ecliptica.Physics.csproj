@@ -2,4 +2,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Ecliptica.Core\Ecliptica.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ILGPU" Version="1.5.3" />
+  </ItemGroup>
 </Project>

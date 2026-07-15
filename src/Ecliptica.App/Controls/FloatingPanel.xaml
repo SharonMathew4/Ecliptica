@@ -1,0 +1,34 @@
+<UserControl x:Class="Ecliptica.App.Controls.FloatingPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Border Background="#EE0D1117" BorderBrush="#2A2E35" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Panel Header -->
+            <Border Grid.Row="0" Background="#161B22" BorderBrush="#2A2E35" BorderThickness="0,0,0,1" Padding="8,6" 
+                    MouseLeftButtonDown="Header_MouseLeftButtonDown" MouseMove="Header_MouseMove" MouseLeftButtonUp="Header_MouseLeftButtonUp">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock x:Name="TitleText" Text="Panel Title" Foreground="#E6EDF3" FontSize="11" FontWeight="Bold" VerticalAlignment="Center"/>
+                    
+                    <Button Grid.Column="1" x:Name="CollapseButton" Content="▼" Foreground="#8B949E" Background="Transparent" BorderThickness="0" Padding="4,0" Click="CollapseButton_Click" Cursor="Hand"/>
+                </Grid>
+            </Border>
+            
+            <!-- Content Area -->
+            <ContentPresenter Grid.Row="1" x:Name="ContentArea" Margin="8"/>
+        </Grid>
+    </Border>
+</UserControl>
